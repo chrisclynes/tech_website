@@ -1,0 +1,24 @@
+:root {
+    --dark-gray: #272727cc;
+    --white-color: rgb(241, 239, 239);
+    --trans-white: rgba(238, 238, 238, 0.692);
+    --black-color: rgb(17, 17, 17);
+    --light-blue: rgb(92, 181, 255);
+    --transition: all 0.5s ease-in-out;
+}
+
+*{
+    font-family: "Baloo 2", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    color: var(--black-color);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}

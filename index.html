@@ -4,14 +4,59 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Technical support for printers, PCs, servers, and mobile tecnology">
+        <meta name="description" content="Technical support for printers, 
+        PCs, servers, and mobile technology">
         <title>R&C Technologies</title>
-        <link rel="stylesheet" href="styles.css">
+        <!-----------------Fonts------------------->
+        <link rel="stylesheet" href="resources/font.css">
+        <!--------------Font-Awesome--------------->
+        <link rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer" 
+            />
+        <!-------------Normalize CSS--------------->
+        <link rel="stylesheet" href="resources/normalize.css">
+        <!---------------Main CSS------------------>
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <h1>R&C technologies</h1>
-        <div>test</div>
-        <span>43</span>
-        <script src="index.js"></script>
+        <header class="header" id="header">
+            <nav role="navigation" aria-label="Main" class="navbar">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">Logo</a>
+                    <button type="button" class="navbar-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="navbar-collapse">
+                    <ul class="navbar-links">
+                        <li class="navbar-item">
+                            <a href="#home" class="navbar-link">Home</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#services" class="navbar-link">Services</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#about-us" class="navbar-link">About Us</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#contact-us" class="navbar-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div role="heading" aria-level="1" class="hero-container container center-items">
+                <h1>technical solutions and services for all your needs</h1>
+                <button class="button button--more-info">find out more</button>
+            </div>
+        </header>
+        
+        
+        <!----------------JQuery------------------->
+        <script src="resources/jquery-3.6.1.js"></script>
+        <!----------------JavaScript------------------>
+        <script src="js/index.js"></script>
     </body>
 </html>

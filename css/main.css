@@ -57,22 +57,64 @@ h1, h2, h3 {
 }
 /* Navbar */
 .navbar {
-    position: sticky;
+    position: fixed;
     width: 100%;
     z-index: 9999;
+    padding: 0 1rem;
     top: 0;
     left: 0;
     background-color: var(--dark-gray);
+}
 
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    font-size: 1.65rem;
+}
+
+.navbar-menu-btn {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    transition: var(--transition);
+    color: var(--white-color);
+}
+
+.navbar-menu-btn:hover {
+    color: var(--light-blue)
+}
+
+.navbar-collapse {
+    display: none;
+}
+
+.navbar-item {
+    padding: 0.5rem 0;
+    list-style: none;
+}
+
+.navbar-link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--white-color);
+    transition: var(--transition);
+}
+
+.navbar-link:hover {
+    color: var(--light-blue);
 }
 
 /* Header */
 .header {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: stretch;
     color: var(--white-color);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../assets/images/circuit_baackground.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), 
+        rgba(0, 0, 0, 0.7)), 
+        url(../assets/images/circuit_background.jpg);
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -83,12 +125,33 @@ h1, h2, h3 {
 .hero-container {
     flex: 1;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
 
-/* Specifics */
+.hero-container h1{
+    font-size: 2.5rem;
+}
+
+.hero-container p{
+    font-size: 1.15rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 1.5rem;
+}
+
 .button--more-info {
     color: var(--white-color);
     padding: 0.5rem;
     border: 2px solid var(--white-color);
 }
+
+.button--more-info:hover {
+    color: var(--black-color);
+    background-color: var(--white-color);
+    transition: var(--transition);
+}
+
+/* Specifics */
+
+
+

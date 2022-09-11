@@ -183,5 +183,24 @@ h1, h2, h3 {
         font-size: 1.35rem;
     }
 }
+/* Sections */
+.service-section {
+    width: 100%;
+    min-height: 50vh;
+}
+.banner {
 
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.service {
+    text-align: center;
+    width: 250px;
+    border: 1px solid black;
+}
 

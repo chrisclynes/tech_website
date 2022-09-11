@@ -7,14 +7,12 @@
     --light-blue: rgb(92, 181, 255);
     --transition: all 0.5s ease-in-out;
 }
-
 * {
     font-family: "Baloo 2", sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 html {
     color: var(--black-color);
     text-rendering: optimizeLegibility;
@@ -23,11 +21,9 @@ html {
     font-weight: 300;
     scroll-behavior: smooth;
 }
-
 img {
     width: 100%;
 }
-
 a{
     color: var(--black-color);
     text-decoration: none;
@@ -38,18 +34,15 @@ h1, h2, h3 {
     font-weight: 400;
     margin: 0.5rem 0;
 }
-
 /* Global Classes */
 .center-items {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .container {
     max-width: 1320px;
 }
-
 .button{
     cursor: pointer;
     background: transparent;
@@ -65,14 +58,12 @@ h1, h2, h3 {
     left: 0;
     background-color: var(--dark-gray);
 }
-
 .navbar-content {
     display: flex;
     justify-content: space-between;
     padding: 0.75rem 0;
     font-size: 1.65rem;
 }
-
 .navbar-menu-btn {
     border: none;
     cursor: pointer;
@@ -80,31 +71,28 @@ h1, h2, h3 {
     transition: var(--transition);
     color: var(--white-color);
 }
-
 .navbar-menu-btn:hover {
     color: var(--light-blue)
 }
-
 .navbar-collapse {
     display: none;
 }
-
 .navbar-item {
     padding: 0.5rem 0;
     list-style: none;
 }
-
 .navbar-link {
     font-size: 1rem;
     text-transform: uppercase;
     color: var(--white-color);
     transition: var(--transition);
 }
-
 .navbar-link:hover {
     color: var(--light-blue);
 }
-
+.navbar-right-side-content, .navbar-left-side-content {
+    display: none;
+}
 /* Header */
 .header {
     display: flex;
@@ -121,37 +109,79 @@ h1, h2, h3 {
     background-position: center;
     background-attachment: fixed;
 }
-
 .hero-container {
     flex: 1;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
-
+.hero-container img{
+    max-width: 70%;
+    height: auto;
+}
 .hero-container h1{
     font-size: 2.5rem;
 }
-
 .hero-container p{
     font-size: 1.15rem;
     letter-spacing: 1.5px;
     margin-bottom: 1.5rem;
 }
-
 .button--more-info {
     color: var(--white-color);
     padding: 0.5rem;
     border: 2px solid var(--white-color);
+    margin-bottom: 3rem;
 }
-
 .button--more-info:hover {
     color: var(--black-color);
     background-color: var(--white-color);
     transition: var(--transition);
 }
-
-/* Specifics */
-
+/* Header Media Query */
+@media screen and  (min-width: 1024px){
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .navbar-main-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .navbar-right-side-content, .navbar-left-side-content {
+        display: flex;
+    }
+    .navbar .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar-content {
+        font-size: 2rem;
+    }
+    .navbar-menu-btn {
+        display: none;
+    }
+    .navbar-collapse {
+        display: inline-block!important;
+    }
+    .navbar-links {
+        display: flex;
+        margin: 0;
+    }
+    .navbar-item {
+        margin-left: 1.25rem;
+    }
+    .hero-container h1 {
+        font-size: 3.25rem;
+    }
+    .hero-container p {
+        font-size: 1.35rem;
+    }
+}
 
 

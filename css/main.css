@@ -92,6 +92,16 @@ h1, h2, h3, h4, h5 {
 }
 .navbar-right-side-content, .navbar-left-side-content {
     display: none;
+    text-align: center;
+    flex-direction: column;
+}
+.navbar-right-side-content{
+    margin-left: 2rem;
+    font-size: 0.85rem;
+}
+.navbar-left-side-content{
+    flex-direction: column;
+    font-size: 0.75rem;
 }
 /* Header */
 .header {

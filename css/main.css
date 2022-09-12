@@ -28,7 +28,7 @@ a{
     color: var(--black-color);
     text-decoration: none;
 }
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
     line-height: 1.25;
     text-transform: capitalize;
     font-weight: 400;
@@ -187,9 +187,16 @@ h1, h2, h3 {
 .service-section {
     width: 100%;
     min-height: 50vh;
+    position: relative;
 }
-.banner {
-
+.section-banner {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    height: 100px;
+    width: 100%;
+    background-color: var(--light-blue);
+    text-align: center;
 }
 .services {
     display: flex;

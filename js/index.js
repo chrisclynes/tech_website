@@ -20,5 +20,19 @@ $(document).ready(function(){
             $('.logo-link').show(trans);
         }else return
     });
+    //Scroll to Top
+    $('.scroll-top-btn').click(function(){
+        $('html, body').animate({scrollTop : 0}, 0);
+    });
+    $(window).on("scroll", function() {
+        const trans = 200;
+        var scrollHeight = $(document).height();
+        var scrollPosition = $(window).height() + $(window).scrollTop();
+        if (scrollPosition >= scrollHeight / 2) {
+            $('.scroll-top-btn').slideDown(trans);
+        }else {
+            $('.scroll-top-btn').slideUp(trans);
+        }
+    });
 });
 

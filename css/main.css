@@ -4,7 +4,7 @@
     --white-color: rgb(241, 239, 239);
     --trans-white: rgba(238, 238, 238, 0.692);
     --black-color: rgb(17, 17, 17);
-    --light-blue: rgb(92, 181, 255);
+    --light-blue: rgb(123, 196, 255);
     --transition: all 0.5s ease-in-out;
 }
 * {
@@ -244,6 +244,7 @@ h1, h2, h3, h4, h5 {
     color: var(--black-color);
     border: 1px solid var(--black-color);
     padding: 1.25rem;
+    transition: var(--transition);
 }
 .residential-section, .commercial-section {
     background-size: cover;
@@ -266,6 +267,19 @@ h1, h2, h3, h4, h5 {
     .section-banner {
         height: 85px;
         font-size: 2rem;
+    }
+    .service:hover {
+        scale: 1.1;
+    }
+    .scroll-top-btn{
+        background-color: rgba(0, 0, 0, 0.603);
+        position: fixed;
+        bottom: 0;
+        right: 80px;
+        width: 45px;
+        height: 40px;
+        z-index: 99;
+        cursor: pointer;
     }
 }
 /* Testimonials */
@@ -299,6 +313,7 @@ h1, h2, h3, h4, h5 {
 }
 /* Footer */
 .footer-section {
+    position: relative;
     width: 100%;
     color: var(--white-color);
     background-color: var(--black-color);

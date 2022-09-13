@@ -20,6 +20,14 @@ $(document).ready(function(){
             $('.logo-link').show(trans);
         }else return
     });
+    //Testimonial Carousel
+    $('.testimonials-section .owl-carousel').owlCarousel({
+        loop: true,
+        autoplay: true,
+        dots: true,
+        nav: false,
+        items: 1
+    });
     //Scroll to Top
     $('.scroll-top-btn').click(function(){
         $('html, body').animate({scrollTop : 0}, 0);

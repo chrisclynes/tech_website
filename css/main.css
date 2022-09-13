@@ -4,7 +4,7 @@
     --white-color: rgb(241, 239, 239);
     --trans-white: rgba(238, 238, 238, 0.692);
     --black-color: rgb(17, 17, 17);
-    --light-blue: rgb(123, 196, 255);
+    --light-blue: rgb(114, 191, 253);
     --transition: all 0.5s ease-in-out;
 }
 * {
@@ -262,35 +262,21 @@ h1, h2, h3, h4, h5 {
     rgba(0, 0, 0, 0.7)), 
     url(../assets/images/buildings.jpg);
 }
-/* Sections Media Query */
-@media screen and  (min-width: 1024px){
-    .section-banner {
-        height: 85px;
-        font-size: 2rem;
-    }
-    .service:hover {
-        scale: 1.1;
-    }
-    .scroll-top-btn{
-        background-color: rgba(0, 0, 0, 0.603);
-        position: fixed;
-        bottom: 0;
-        right: 80px;
-        width: 45px;
-        height: 40px;
-        z-index: 99;
-        cursor: pointer;
-    }
-}
 /* Testimonials */
 .testimonials-section {
-   background-color: var(--white-color);
+    background-color: var(--white-color);
+    width: 100%;
+    min-height: 50vh;
+    position: relative;
 }
 .testimonial {
     position: relative;
     width: 50%;
     min-width: 290px;
     margin: 2rem 0;
+}
+.testimonial p {
+    line-height: 1.7;
 }
 .quotes{
     font-size: 2.5rem;
@@ -311,6 +297,54 @@ h1, h2, h3, h4, h5 {
    min-height: 400px!important;
    border-bottom: 4px solid var(--white-color);
 }
+
+.contact-left-content, .contact-right-content {
+    margin: 1rem;
+    color: var(--white-color);
+}
+.contact-left-content {
+    display: flex;
+    flex-direction: column;
+}
+.contact-left-content span {
+    margin: 0.5rem 0;
+}
+.contact-right-content form {
+    display: flex;
+    flex-direction: column;
+}
+#contact-submit-btn {
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+.contact-container {
+    flex-direction: column;
+    margin-top: 1rem;
+}
+/* Sections Media Query */
+@media screen and  (min-width: 1024px){
+    .section-banner {
+        height: 85px;
+        font-size: 2rem;
+    }
+    .service:hover {
+        scale: 1.1;
+    }
+    .scroll-top-btn {
+        background-color: rgba(0, 0, 0, 0.603);
+        position: fixed;
+        bottom: 0;
+        right: 80px;
+        width: 45px;
+        height: 40px;
+        z-index: 99;
+        cursor: pointer;
+    }
+    .contact-container {
+        flex-direction: row;
+    }
+}
+
 /* Footer */
 .footer-section {
     position: relative;

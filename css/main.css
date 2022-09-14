@@ -135,18 +135,17 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
     text-align: center;
 }
-.hero-container img{
-    max-width: 70%;
+.hero-container-img-box {
+    display: flex;
+    width: 100%;
+}
+.hero-carousel-container {
+    display: none;
     height: auto;
+    max-width: 600px;
+    margin: 0 2rem;
 }
-.hero-container h1{
-    font-size: 2.5rem;
-}
-.hero-container p{
-    font-size: 1.15rem;
-    letter-spacing: 1.5px;
-    margin-bottom: 1.5rem;
-}
+
 .button--more-info {
     color: var(--white-color);
     padding: 0.5rem;
@@ -204,6 +203,32 @@ h1, h2, h3, h4, h5 {
     }
     .hero-container p {
         font-size: 1.35rem;
+    }
+    .hero-carousel-container {
+        display: flex;
+        height: 600px;
+        max-width: 700px;
+        margin: 0 2rem;
+    }
+    .hero-container h1 {
+        font-size: 2.5rem;
+    }
+    .hero-container p {
+        font-size: 1.15rem;
+        letter-spacing: 1.5px;
+        margin-bottom: 1.5rem;
+    }
+    .hero-item {
+        padding: 2rem;
+        flex-direction: column;
+        background-color: rgba(43, 43, 43, 0.685);
+    }
+    .hero-item h3 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .hero-icon {
+        font-size: 4rem;
     }
 }
 /* Sections */
@@ -271,6 +296,7 @@ h1, h2, h3, h4, h5 {
 }
 .carousel-container {
     width: 320px;
+    margin-bottom: 1rem;
 }
 .testimonial {
     position: relative;

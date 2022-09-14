@@ -94,7 +94,8 @@ h1, h2, h3, h4, h5 {
 .logo-link img{
     width: 70px;
 }
-.navbar-right-side-content, .navbar-left-side-content {
+.navbar-right-side-content, 
+.navbar-left-side-content {
     display: none;
     text-align: center;
     flex-direction: column;
@@ -171,7 +172,8 @@ h1, h2, h3, h4, h5 {
         align-items: center;
         flex-direction: column;
     }
-    .navbar-right-side-content, .navbar-left-side-content {
+    .navbar-right-side-content, 
+    .navbar-left-side-content {
         display: flex;
     }
     .navbar .container {
@@ -326,7 +328,8 @@ h1, h2, h3, h4, h5 {
    border-bottom: 4px solid var(--white-color);
 }
 
-.contact-left-content, .contact-right-content {
+.contact-left-content, 
+.contact-right-content {
     margin: 1rem;
     color: var(--white-color);
 }

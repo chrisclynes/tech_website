@@ -4,7 +4,7 @@ $(document).ready(function(){
     $(window).on('resize', function() {    
         windowWidth = $(window).width();
     })
-    //nav menu btn
+    //Nav Menu btn
     $('#navbar-menu-btn').click(function(){
         $('.navbar-collapse').slideToggle(250);
     });

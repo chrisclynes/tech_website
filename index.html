@@ -270,21 +270,23 @@
             </div>
         </section>
          <!-------Footer--------->
-         <footer class="center-items footer-section">
-                <div class="footer-links">
-                    <i class="fa-brands fa-facebook footer-link" aria-hidden="true"></i>
-                    <i class="fa-brands fa-twitter footer-link" aria-hidden="true"></i>
-                    <i class="fa fa-envelope footer-link" aria-hidden="true"></i>
-                    <i class="fa-brands fa-google-plus-g footer-link" aria-hidden="true"></i>
-                </div>
-                <span>® 2022 R&C Technologies</span>
-            </footer>
-            <div class="scroll-top-btn center-items">
-                <i 
-                    class="fa-sharp fa-solid fa-chevron-up" 
-                    style="font-size: 1.75rem; color: var(--white-color)">
-                </i>
+        <footer class="center-items footer-section">
+            <div class="footer-links">
+                <i class="fa-brands fa-facebook footer-link" aria-hidden="true"></i>
+                <i class="fa-brands fa-twitter footer-link" aria-hidden="true"></i>
+                <i class="fa fa-envelope footer-link" aria-hidden="true"></i>
+                <i class="fa-brands fa-google-plus-g footer-link" aria-hidden="true"></i>
             </div>
+            <span>® <span id="footer-year"></span> R&C Technologies</span>
+        </footer>
+
+        <div class="scroll-top-btn center-items">
+            <i class="fa-sharp fa-solid fa-chevron-up" style="font-size: 1.75rem; color: var(--white-color)"></i>
+        </div>
+
+        <script>
+            document.getElementById('footer-year').textContent = new Date().getFullYear();
+        </script>
         <!----------------JQuery------------------->
         <script src="resources/jquery-3.6.1.js"></script>
         <!----------------JavaScript------------------>
